@@ -1,10 +1,8 @@
-import NavbarSection from './components/navbar'
-import HeroSection from './components/hero'
-import Technologies from './components/technologies'
-// import AboutSection from './components/about'
+import NavbarSection from './components/navbar';
+import HeroSection from './components/hero';
+import Technologies from './components/technologies';
 
 function App() {
-
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased 
     selection:bg-cyan-300 selection:text-cyan-900">
@@ -13,17 +11,16 @@ function App() {
           bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
         </div>
       </div>
-      <div className='container mx-auto '>
+      <div className='container mx-auto'>
         <NavbarSection />
         <HeroSection />
         <Technologies />
         <Technologies />
         <Technologies />
         <Technologies />
-
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

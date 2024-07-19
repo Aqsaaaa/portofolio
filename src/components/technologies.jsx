@@ -1,11 +1,15 @@
-import { RiReactjsLine } from "react-icons/ri"
+import { RiReactjsLine, RiFlutterFill } from "react-icons/ri"
+
 const Technologies = () => {
     return (
         <div className="border-b border-neutral-800 pb-24">
             <h2 className="my-20 text-center text-4xl">Technologies</h2>
             <div className="flex flex-wrap items-center justify-center gap-4">
                 <div className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <RiReactjsLine />
+                    <RiReactjsLine className="text-6xl text-cyan-400" />
+                </div>
+                <div className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <RiFlutterFill className="text-6xl text-cyan-400" />
                 </div>
             </div>
         </div>
