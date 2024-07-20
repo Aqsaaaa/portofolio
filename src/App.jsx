@@ -1,6 +1,6 @@
-import NavbarSection from './components/Navbar';
-import HeroSection from './components/Hero';
-import TechnologiesSection from './components/Technologies';
+import NavbarSection from './components/navbar';
+import HeroSection from './components/hero';
+import TechnologiesSection from './components/technologies';
 import ContactSection from './components/Contact';
 function App() {
   return (

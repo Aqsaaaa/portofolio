@@ -5,10 +5,6 @@ import heroPic from "../assets/heroPicture.jpg";
 
 const HeroSection = () => {
     const typedElement = useRef(null);
-    const [windowSize, setWindowSize] = React.useState({
-        width: window.innerWidth,
-        height: window.innerHeight
-    });
 
     useEffect(() => {
         const handleResize = () => {
