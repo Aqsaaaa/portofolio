@@ -5,6 +5,26 @@ import heroPic from "../assets/heroPicture.jpg";
 
 const HeroSection = () => {
     const typedElement = useRef(null);
+    const [windowSize, setWindowSize] = React.useState({
+        width: window.innerWidth,
+        height: window.innerHeight
+    });
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowSize({
+                width: window.innerWidth,
+                height: window.innerHeight
+            });
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+
+    }, []);
 
     useEffect(() => {
         const options = {
@@ -22,7 +42,7 @@ const HeroSection = () => {
     }, []);
 
     return (
-        <div className="border-b border-neutral-900 pb-10 py-32 px-6">
+        <div className="border-b border-transparent pb-10 py-44 px-6">
             <div className="flex flex-wrap">
                 <div >
                     <div className="flex flex-col items-start ">
@@ -30,7 +50,7 @@ const HeroSection = () => {
                             initial={{ x: '-100%' }}
                             animate={{ x: 0 }}
                             transition={{ duration: 1 }}
-                            className="pb-14 text-6xl font-thin tracking-tight lg:mt-16 lg:text-6xl"
+                            className={`max-lg:pb-8 lg:pb-14 text-6xl font-thin tracking-tight lg:mt-16 max-lg:text-4xl `}
                         >
                             Muhammad Cendekia Rayhan
                         </motion.h2>
@@ -40,14 +60,15 @@ const HeroSection = () => {
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 1.5, delay: 0.5 }}
                                 ref={typedElement}
-                                className="bg-gradient-to-r from-blue-500 via-slate-500 to-white bg-clip-text text-transparent"
+                                className="max-lg:text-2xl bg-gradient-to-r from-blue-500 via-slate-500 to-white bg-clip-text text-transparent"
                             ></motion.span>
                         </span>
                         <motion.p
                             initial={{ x: '-100%' }}
                             animate={{ x: 0 }}
                             transition={{ duration: 1 }}
-                            className="my-2 mb-10 max-w-xl">
+                            className={`my-2 mb-10 max-w-xl max-lg:text-xs`}
+                        >
                             Im a passionate programmer with a diverse skill set spanning mobile,frontend, and backend development.
                             From crafting intuitive user interfaces to building robust backend systems,I thrive on transforming complex problems into elegant solutions.
                             My journey in programming is fueled by a relentless curiosity and a commitment to continuous learning,
@@ -55,9 +76,9 @@ const HeroSection = () => {
                         </motion.p>
                     </div>
                 </div>
-                <div className="w-full lg:w-1/2 lg:p-8">
+                <div className="w-full lg:p-8 lg:w-1/2">
                     <div className="flex justify-center lg:justify-end">
-                        <img src={heroPic} alt="Muhammad Cendekia Rayhan" className="w-2/4 rounded-3xl" style={{ maxWidth: '30rem' }} />
+                        <img src={heroPic} alt="Muhammad Cendekia Rayhan" className="w-2/4 rounded-3xl" style={{minWidth: '20rem' }} />
                     </div>
                 </div>
             </div>
@@ -66,7 +87,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
-
-
 
