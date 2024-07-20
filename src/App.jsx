@@ -1,7 +1,7 @@
-import NavbarSection from './components/navbar';
-import HeroSection from './components/hero';
-import Technologies from './components/technologies';
-
+import NavbarSection from './components/Navbar';
+import HeroSection from './components/Hero';
+import TechnologiesSection from './components/Technologies';
+import ContactSection from './components/Contact';
 function App() {
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased 
@@ -14,10 +14,8 @@ function App() {
       <div className='container mx-auto'>
         <NavbarSection />
         <HeroSection />
-        <Technologies />
-        <Technologies />
-        <Technologies />
-        <Technologies />
+        <TechnologiesSection />
+        <ContactSection />
       </div>
     </div>
   );

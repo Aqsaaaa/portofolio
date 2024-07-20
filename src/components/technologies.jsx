@@ -1,6 +1,6 @@
 import { RiReactjsLine, RiFlutterFill } from "react-icons/ri"
 
-const Technologies = () => {
+const TechnologiesSection = () => {
     return (
         <div className="border-b border-neutral-800 pb-24">
             <h2 className="my-20 text-center text-4xl">Technologies</h2>
@@ -16,4 +16,4 @@ const Technologies = () => {
     )
 }
 
-export default Technologies
+export default TechnologiesSection

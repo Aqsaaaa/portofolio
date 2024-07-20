@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Typed from "typed.js";
+import heroPic from "../assets/heroPicture.jpg";
 
 const HeroSection = () => {
     const typedElement = useRef(null);
@@ -21,7 +22,7 @@ const HeroSection = () => {
     }, []);
 
     return (
-        <div className="border-b border-neutral-900 pb-2 py-32 px-6">
+        <div className="border-b border-neutral-900 pb-10 py-32 px-6">
             <div className="flex flex-wrap">
                 <div >
                     <div className="flex flex-col items-start ">
@@ -46,12 +47,17 @@ const HeroSection = () => {
                             initial={{ x: '-100%' }}
                             animate={{ x: 0 }}
                             transition={{ duration: 1 }}
-                            className="my-2 max-w-xl">
+                            className="my-2 mb-10 max-w-xl">
                             Im a passionate programmer with a diverse skill set spanning mobile,frontend, and backend development.
                             From crafting intuitive user interfaces to building robust backend systems,I thrive on transforming complex problems into elegant solutions.
                             My journey in programming is fueled by a relentless curiosity and a commitment to continuous learning,
                             enabling me to stay at the forefront of technological advancements. Let's embark on a journey to innovate, create, and build the future together.
                         </motion.p>
+                    </div>
+                </div>
+                <div className="w-full lg:w-1/2 lg:p-8">
+                    <div className="flex justify-center lg:justify-end">
+                        <img src={heroPic} alt="Muhammad Cendekia Rayhan" className="w-2/4 rounded-3xl" style={{ maxWidth: '30rem' }} />
                     </div>
                 </div>
             </div>
