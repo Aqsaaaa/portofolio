@@ -40,7 +40,7 @@ const HeroSection = () => {
     return (
         <div className="border-b border-transparent pb-10 py-44 px-6">
             <div className="flex flex-wrap">
-                <div >
+                <div className="w-full lg:w-1/2">
                     <div className="flex flex-col items-start ">
                         <motion.h2
                             initial={{ x: '-100%' }}
@@ -73,9 +73,13 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className="w-full lg:p-8 lg:w-1/2">
-                    <div className="flex justify-center lg:justify-end">
-                        <img src={heroPic} alt="Muhammad Cendekia Rayhan" className="w-2/4 rounded-3xl" style={{minWidth: '20rem' }} />
-                    </div>
+                    <motion.div
+                        initial={{ x: '100%' }}
+                        animate={{ x: 0 }}
+                        transition={{ duration: 1 }}
+                        className="flex justify-center lg:justify-end">
+                        <img src={heroPic} alt="Muhammad Cendekia Rayhan" className="w-2/4 rounded-3xl" style={{ minWidth: '20rem' }} />
+                    </motion.div>
                 </div>
             </div>
         </div>
