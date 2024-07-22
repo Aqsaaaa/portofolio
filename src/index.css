@@ -42,6 +42,14 @@ body {
     overflow: hidden;
     height: 100vh;
   }
-  
+
+  @font-face {
+    font-family: apple;
+    src: url('../public/SFPRODISPLAYREGULAR.OTF');
+  }
+
+  .apple {
+    font-family: apple;
+  }
 
   

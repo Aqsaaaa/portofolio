@@ -5,6 +5,17 @@ import heroPic from "../assets/heroPicture.jpg";
 
 const HeroSection = () => {
     const typedElement = useRef(null);
+    const container = (delay) => ({
+        hidden: { x: -100, opacity: 0 },
+        visible: {
+            x: 0,
+            opacity: 1,
+            transition: {
+                delay: delay,
+                duration: 0.5,
+            }
+        }
+    });
 
     useEffect(() => {
         const handleResize = () => {
@@ -38,33 +49,32 @@ const HeroSection = () => {
     }, []);
 
     return (
-        <div className="border-b border-transparent pb-10 py-44 px-6">
+        <div className="border-b border-transparent pb-10 py-36 px-8">
             <div className="flex flex-wrap">
                 <div className="w-full lg:w-1/2">
-                    <div className="flex flex-col items-start ">
+                    <div
+                        className="flex flex-col items-start ">
                         <motion.h2
-                            initial={{ x: '-100%' }}
-                            animate={{ x: 0 }}
-                            transition={{ duration: 1 }}
-                            className={`max-lg:pb-8 lg:pb-14 text-6xl font-thin tracking-tight lg:mt-16 max-lg:text-4xl `}
-                        >
+                            variants={container(0.5)}
+                            initial="hidden"
+                            animate="visible"
+                            className={`max-lg:pb-8 lg:pb-14 text-6xl font-thin tracking-tight lg:mt-16 max-lg:text-4xl apple`}>
                             Muhammad Cendekia Rayhan
                         </motion.h2>
                         <span className="text-3xl font-thin lg:mb-4">
                             <motion.span
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ duration: 1.5, delay: 0.5 }}
+                                variants={container(1)}
+                                initial="hidden"
+                                animate="visible"
                                 ref={typedElement}
-                                className="max-lg:text-2xl bg-gradient-to-r from-blue-500 via-slate-500 to-white bg-clip-text text-transparent"
+                                className="max-lg:text-2xl bg-gradient-to-r from-blue-500 via-slate-500 to-white bg-clip-text text-transparent apple"
                             ></motion.span>
                         </span>
                         <motion.p
-                            initial={{ x: '-100%' }}
-                            animate={{ x: 0 }}
-                            transition={{ duration: 1 }}
-                            className={`my-2 mb-10 max-w-xl max-lg:text-xs`}
-                        >
+                            variants={container(1.5)}
+                            initial="hidden"
+                            animate="visible"
+                            className={`my-2 mb-10 max-w-xl max-lg:text-xs text-xl apple`}>
                             Im a passionate programmer with a diverse skill set spanning mobile,frontend, and backend development.
                             From crafting intuitive user interfaces to building robust backend systems,I thrive on transforming complex problems into elegant solutions.
                             My journey in programming is fueled by a relentless curiosity and a commitment to continuous learning,
@@ -74,15 +84,15 @@ const HeroSection = () => {
                 </div>
                 <div className="w-full lg:p-8 lg:w-1/2">
                     <motion.div
-                        initial={{ x: '100%' }}
-                        animate={{ x: 0 }}
-                        transition={{ duration: 1 }}
+                        variants={container(2)}
+                        initial={{ x: 100, opacity: 0 }}
+                        animate="visible"
                         className="flex justify-center lg:justify-end">
-                        <img src={heroPic} alt="Muhammad Cendekia Rayhan" className="w-2/4 rounded-3xl" style={{ minWidth: '20rem' }} />
+                        <img src={heroPic} alt="Muhammad Cendekia Rayhan" className="w-2/3 rounded-3xl" style={{ minWidth: '20rem' }} />
                     </motion.div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

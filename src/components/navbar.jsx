@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import { FaLinkedinIn, FaGithub, FaInstagram,  } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaInstagram, } from "react-icons/fa";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const tabs = [
@@ -56,7 +56,7 @@ const NavbarSection = () => {
             initial={{ y: -100, backgroundColor: navbarColor }}
             animate={{ y: showNavbar ? 0 : -100 }}
             transition={{ type: "spring", duration: 0.5 }}
-            className={`fixed w-full mx-auto flex items-center justify-between px-4 z-50`}
+            className={`fixed w-full mx-auto flex items-center justify-between px-6 z-50 apple`}
         >
             <motion.div
                 className="fixed inset-0 w-full h-20"
@@ -66,15 +66,15 @@ const NavbarSection = () => {
             <div className="flex flex-shrink-0 items-center">
                 <div className="md:hidden">
                     <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white z-50 relative">
-                        {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+                        {isMenuOpen ? <FiX size={20} /> : <FiMenu size={20} />}
                     </button>
                 </div>
-                <div className={`hidden md:flex`}>
+                <div className={`hidden md:flex `}>
                     {tabs.map((tab) => (
                         <button
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
-                            className={`relative px-4 py-2 rounded-lg z-10 ${activeTab === tab.id ? "text-white" : "text-white"}`}
+                            className={`relative px-4 py-2 rounded-lg z-10 ${activeTab === tab.id ? "text-white" : "text-white apple"}`}
                         >
                             {activeTab === tab.id && (
                                 <motion.div
@@ -89,7 +89,7 @@ const NavbarSection = () => {
                     ))}
                 </div>
             </div>
-            <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+            <div className="py-8 flex items-center justify-center gap-4 text-2xl">
                 <a href="https://www.linkedin.com/in/cendekiaqsa/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedinIn />
                 </a>
@@ -115,7 +115,7 @@ const NavbarSection = () => {
                                 setActiveTab(tab.id);
                                 setIsMenuOpen(false);
                             }}
-                            className={`relative px-4 py-2 rounded-lg text-white text-2xl`}
+                            className={`relative px-4 py-2 rounded-lg text-white text-xl apple`}
                         >
                             {activeTab === tab.id && (
                                 <motion.div
