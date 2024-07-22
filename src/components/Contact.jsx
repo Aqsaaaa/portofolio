@@ -12,12 +12,12 @@ extend({ MeshLineGeometry, MeshLineMaterial });
 // useGLTF.preload('../assets/tag.glb');
 useTexture.preload(texturePic);
 
-export default function ContactSection() {
+function ContactSection() {
     const [formRef, inViewForm] = useInView({ triggerOnce: true });
     const [canvasRef, inViewCanvas] = useInView({ triggerOnce: true });
 
     return (
-        <div className="flex flex-col lg:flex-row items-start justify-center">
+        <div className="flex flex-col lg:flex-row items-center justify-center">
             <motion.div
                 initial={{ x: '-100%' }}
                 animate={inViewCanvas ? { x: 0 } : {}}
@@ -74,6 +74,8 @@ export default function ContactSection() {
         </div>
     );
 }
+
+export default ContactSection;
 
 function Band({ maxSpeed = 50, minSpeed = 10 }) {
     const band = useRef(), fixed = useRef(), j1 = useRef(), j2 = useRef(), j3 = useRef(), card = useRef();

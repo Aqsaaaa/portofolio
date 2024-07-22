@@ -49,7 +49,7 @@ const HeroSection = () => {
     }, []);
 
     return (
-        <div className="border-b border-transparent pb-10 py-36 px-8">
+        <div className="border-b border-transparent pb-10 py-36 px-8" id="home">
             <div className="flex flex-wrap">
                 <div className="w-full lg:w-1/2">
                     <div

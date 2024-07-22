@@ -16,14 +16,14 @@ const iconVariants = (duration) => ({
 
 const TechnologiesSection = () => {
     return (
-        <div className="border-b-4 border-neutral-800 pb-24">
-            <h2 className="my-20 text-center text-4xl">Technologies</h2>
+        <div className="border-b-4 border-neutral-800 pb-24" id="technologies">
+            <h2 className="my-20 text-center text-4xl apple">Technologies</h2>
             <div className="flex flex-wrap items-center justify-center gap-4">
                 <motion.div
                     variants={iconVariants(2)}
                     initial="initial"
                     animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4">
+                    className="rounded-2xl border-4 border-neutral-800 p-4 ">
                     <SiReact className="text-6xl text-cyan-400" />
                 </motion.div>
                 <motion.div
