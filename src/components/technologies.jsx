@@ -23,36 +23,52 @@ const TechnologiesSection = () => {
                     variants={iconVariants(2)}
                     initial="initial"
                     animate="animate"
-                    className="rounded-2xl border-4 border-neutral-800 p-4 ">
-                    <SiReact className="text-6xl text-cyan-400" />
+                    style={{ minWidth: '1rem' }}
+                    className="card flex items-center justify-center m-4">
+                    <div
+                        className="rounded-xl bg-black p-4">
+                        <SiReact className="text-6xl text-cyan-400" />
+                    </div>
                 </motion.div>
                 <motion.div
-                    initial="initial"
-                    animate="animate"
                     variants={iconVariants(3)}
-                    className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <SiFirebase className="text-6xl text-yellow-400" />
-                </motion.div>
-                <motion.div
                     initial="initial"
                     animate="animate"
+                    className="card flex items-center justify-center m-2">
+                    <div
+                        className="rounded-xl bg-black p-4">
+                        <SiFirebase className="text-6xl text-yellow-400" />
+                    </div>
+                </motion.div>
+                <motion.div
                     variants={iconVariants(4)}
-                    className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <SiFlutter className="text-6xl text-sky-400" />
-                </motion.div>
-                <motion.div
                     initial="initial"
                     animate="animate"
+                    className="card flex items-center justify-center m-4">
+                    <div
+                        className="rounded-xl bg-black p-4">
+                        <SiFlutter className="text-6xl text-sky-400" />
+                    </div>
+                </motion.div>
+                <motion.div
                     variants={iconVariants(1)}
-                    className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <SiTailwindcss className="text-6xl text-cyan-400" />
-                </motion.div>
-                <motion.div
                     initial="initial"
                     animate="animate"
+                    className="card flex items-center justify-center m-4">
+                    <div
+                        className="rounded-xl bg-black p-4">
+                        <SiTailwindcss className="text-6xl text-cyan-400" />
+                    </div>
+                </motion.div>
+                <motion.div
                     variants={iconVariants(6)}
-                    className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <SiPostman className="text-6xl text-orange-600" />
+                    initial="initial"
+                    animate="animate"
+                    className="card flex items-center justify-center m-4 ">
+                    <div
+                        className="rounded-xl bg-black p-4">
+                        <SiPostman className="text-6xl text-orange-600" />
+                    </div>
                 </motion.div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Typed from "typed.js";
 import heroPic from "../assets/heroPicture.jpg";
@@ -74,7 +74,7 @@ const HeroSection = () => {
                             variants={container(1.5)}
                             initial="hidden"
                             animate="visible"
-                            className={`my-2 mb-10 max-w-xl max-lg:text-xs text-xl apple`}>
+                            className={`my-2 mb-10 max-lg:text-xs text-xl apple text-justify w-full`}>
                             Im a passionate programmer with a diverse skill set spanning mobile,frontend, and backend development.
                             From crafting intuitive user interfaces to building robust backend systems,I thrive on transforming complex problems into elegant solutions.
                             My journey in programming is fueled by a relentless curiosity and a commitment to continuous learning,

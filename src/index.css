@@ -52,4 +52,59 @@ body {
     font-family: apple;
   }
 
+
+  @property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  :root {
+    --clr-1: #1e1e1e;
+    --clr-3: #3b82f6;
+    --clr-4: #1e1e1e;
+    --clr-5: #fff;
+  }
+
+  .card {
+    height: 80px;
+    width: 80px;
+    background: var(--clr-1);
+    border-radius: 0.75rem;
+  
+    position: relative;
+  }
+  
+  .card::before,
+  .card::after {
+    content: "";
+    position: absolute;
+    inset: -0.5rem;
+    z-index: -1;
+    background: conic-gradient(
+      from var(--gradient-angle),
+      var(--clr-3),
+      var(--clr-4),
+      var(--clr-4),
+      var(--clr-5),
+      var(--clr-4),
+      var(--clr-4),
+      var(--clr-3)
+    );
+    border-radius: inherit;
+    animation: rotation 3s linear infinite;
+  }
+  
+  .card::after {
+    filter: blur(100rem);
+  }
+  
+  @keyframes rotation {
+    0% {
+      --gradient-angle: 0deg;
+    }
+    100% {
+      --gradient-angle: 360deg;
+    }
+  }
   

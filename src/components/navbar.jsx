@@ -7,7 +7,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 const tabs = [
     { id: 'home', label: "Home", path: "./components/hero" },
     { id: 'technologies', label: "Technologies", path: "./components/technologies" },
-    { id: 'recent', label: "Contact", path: ".components/Contact.jsx" },
+    { id: 'contact', label: "Contact", path: ".components/Contact.jsx" },
 ];
 
 const NavbarSection = () => {
