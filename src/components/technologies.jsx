@@ -16,7 +16,7 @@ const iconVariants = (duration) => ({
 
 const TechnologiesSection = () => {
     return (
-        <div className="border-b-4 border-neutral-800 pb-24" id="technologies">
+        <div className="pb-24" id="technologies">
             <h2 className="my-20 text-center text-4xl apple">Technologies</h2>
             <div className="flex flex-wrap items-center justify-center gap-4 flex-col">
                 <div className="flex flex-wrap justify-center">
