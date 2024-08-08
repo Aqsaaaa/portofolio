@@ -4,10 +4,9 @@ function ContactSection() {
     return (
         <div className="flex flex-col lg:flex-row items-center justify-center" id="contact">
             <motion.div initial={{ x: '100%' }}
-                animate={inViewForm ? { x: 0 } : {}}
+                animate={{ x: 0 }}
                 transition={{ duration: 1 }}
-                className="w-full lg:w-1/2 max-lg:p-8 lg:p-20 glass"
-                ref={formRef}>
+                className="w-full lg:w-1/2 max-lg:p-8 lg:p-20 glass">
                 <div className='justify-center border-2 border-white rounded-2xl bg-transparent bg-neutral-800 bg-opacity-50 backdrop-filter backdrop-blur-md'>
                     <form className="space-y-4 p-6">
                         <div className='flex justify-center items-center my-8'>
