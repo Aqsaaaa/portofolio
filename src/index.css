@@ -66,6 +66,19 @@ body {
     --clr-5: #fff;
   }
 
+  .color-1st {
+    background-color: #021526;
+  }
+  .color-2nd {
+    background-color: #03346E;
+  }
+  .color-3rd {
+    background-color: #6EACDA;
+  }
+  .color-4th {
+    background-color: #E2E2B6;
+  }
+  
   .card {
     height: 80px;
     width: 80px;

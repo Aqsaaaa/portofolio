@@ -24,7 +24,7 @@ function ContactSection() {
                 initial={{ x: '-100%' }}
                 animate={inViewCanvas ? { x: 0 } : {}}
                 transition={{ duration: 1 }}
-                className="w-full mx-auto lg:w-1/2 h-screen"
+                className="w-full mx-auto lg:w-1/2 h-screen max-md:hidden"
                 ref={canvasRef}>
                 <div className='h-full'>
                     {inViewCanvas && (
