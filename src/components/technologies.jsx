@@ -24,106 +24,75 @@ const TechnologiesSection = () => {
                         variants={iconVariants(2)}
                         initial="initial"
                         animate="animate"
-                        style={{ minWidth: '1rem' }}
-                        className="card flex items-center justify-center m-4">
-                        <div
-                            className="rounded-xl bg-slate-950 p-4">
-                            <Flutter />
-                        </div>
+                        className="rounded-2xl border-4 border-neutral-800 p-4 m-4">
+                        <Flutter />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(3)}
                         initial="initial"
                         animate="animate"
-                        className="card flex items-center justify-center m-4">
-                        <div className="rounded-xl bg-slate-950 p-4">
-                            <React />
-                        </div>
+                        className="rounded-2xl border-4 border-neutral-800 p-4 m-4">
+                        <React />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(4)}
                         initial="initial"
                         animate="animate"
-                        className="card flex items-center justify-center m-4">
-                        <div className="rounded-xl bg-slate-950 p-4">
-                            <Firebase />
-                        </div>
+                        className="rounded-2xl border-4 border-neutral-800 p-4 m-4">
+                        <Firebase />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(1)}
                         initial="initial"
                         animate="animate"
-                        className="card flex items-center justify-center m-4">
-                        <div
-                            className="rounded-xl bg-slate-950 p-4">
-                            <Tailwindcss />
-                        </div>
+                        className="rounded-2xl border-4 border-neutral-800 p-4 m-4">
+                        <Tailwindcss />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(6)}
                         initial="initial"
                         animate="animate"
-                        className="card flex items-center justify-center m-4 ">
-                        <div
-                            className="rounded-xl bg-slate-950 p-4">
-                            <Postman />
-                        </div>
+                        className="rounded-2xl border-4 border-neutral-800 p-4 m-4 ">
+                        <Postman />
                     </motion.div>
                 </div>
-
                 <div className="flex flex-wrap justify-center">
                     <motion.div
                         variants={iconVariants(1)}
                         initial="initial"
                         animate="animate"
-                        className="card flex items-center justify-center m-4 ">
-                        <div
-                            className="rounded-xl bg-slate-950 p-4">
-                            <Dart />
-                        </div>
+                        className="rounded-2xl border-4 border-neutral-800 p-4 m-4 ">
+                        <Dart />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(2)}
                         initial="initial"
                         animate="animate"
-                        className="card flex items-center justify-center m-4 ">
-                        <div
-                            className="rounded-xl bg-slate-950 p-4">
-                            <Git />
-                        </div>
+                        className="rounded-2xl border-4 border-neutral-800 p-4 m-4 ">
+                        <Git />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(3)}
                         initial="initial"
                         animate="animate"
-                        className="card flex items-center justify-center m-4 ">
-                        <div
-                            className="rounded-xl bg-slate-950 p-4">
-                            <Postgresql />
-                        </div>
+                        className="rounded-2xl border-4 border-neutral-800 p-4 m-4 ">
+                        <Postgresql />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(2)}
                         initial="initial"
                         animate="animate"
-                        className="card flex items-center justify-center m-4 ">
-                        <div
-                            className="rounded-xl bg-slate-950 p-4">
-                            <Figma />
-                        </div>
+                        className="rounded-2xl border-4 border-neutral-800 p-4 m-4 ">
+                        <Figma />
                     </motion.div>
                     <motion.div
                         variants={iconVariants(5)}
                         initial="initial"
                         animate="animate"
-                        className="card flex items-center justify-center m-4 ">
-                        <div
-                            className="rounded-xl bg-slate-950 p-4">
-                            <Nodejs />
-                        </div>
+                        className="rounded-2xl border-4 border-neutral-800 p-4 m-4 ">
+                        <Nodejs />
                     </motion.div>
                 </div>
-
             </div>
         </div>
     )
