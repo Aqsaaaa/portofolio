@@ -20,7 +20,7 @@ function ContactSection() {
 
     return (
         <div className="flex flex-col lg:flex-row items-center justify-center border" id="contact">
-            {/* <motion.div
+            <motion.div
                 initial={{ x: '-100%' }}
                 animate={inViewCanvas ? { x: 0 } : {}}
                 transition={{ duration: 1 }}
@@ -42,7 +42,7 @@ function ContactSection() {
                         </Canvas>
                     )}
                 </div>
-            </motion.div> */}
+            </motion.div> 
             <motion.div initial={{ x: '100%' }}
                 animate={inViewForm ? { x: 0 } : {}}
                 transition={{ duration: 1 }}
