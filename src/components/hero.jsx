@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Typed from "typed.js";
-import heroPic from "../assets/heroPictures.jpg";
+import heroPic from "../assets/heroPicture.jpg";
 
 const HeroSection = () => {
     const typedElement = useRef(null);
